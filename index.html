@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Contrast Checker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-colors">
+        <div class="color-container">
+          <label for="text-color">Text Color:</label>
+          <input type="color" id="text-color" value="#000000" />
+        </div>
+        <div class="color-container">
+          <label for="bg-color">Background Color:</label>
+          <input type="color" id="bg-color" value="#3277f6" />
+        </div>
+      </div>
+      <div class="result">
+        <div id="preview">
+          This is the text we will use to check if there is enough contrast
+          between the text and the background.
+        </div>
+        <p id="contrast">1</p>
+        <p id="rating">Demo Text</p>
+      </div>
+    </div>
+  </body>
+</html>
